@@ -35,5 +35,5 @@ export function documentTemplates<D extends Document>(
     label: attachment.filename || "Unknown filename",
     template: attachmentToComponent(attachment, document)
   }));
-  return [...selectedTemplate, ...templatesFromAttachments];
+  return [...selectedTemplate];
 }
